@@ -24,3 +24,31 @@ The dropbox section specifies a single setting called token that should contain 
 specify the directory on the local machine where files are stored before being uploaded to Dropbox and GitHub
 #### test_directory
 specify a separate directory where test files can be stored before being uploaded to Dropbox and GitHub.
+
+
+"""
+# setup.py
+
+This script reads a YAML configuration file and creates a working directory and test directory based on the values specified in the configuration file.
+
+Usage:
+    python setup.py
+
+Dependencies:
+    - PyYAML
+
+Configuration:
+    The configuration file must be named "config.yml" and must be located in the same directory as the setup.py script. The following configuration options are supported:
+
+    - working_directory: (string, optional) Specifies the path to the working directory where files will be stored before being uploaded to Dropbox and GitHub. If not specified, the working directory will not be created.
+    
+    - test_directory: (string, optional) Specifies the path to the test directory where test files will be stored before being uploaded to Dropbox and GitHub. If not specified, the test directory will not be created.
+    
+    - dropbox: (object, optional) Specifies the Dropbox settings. The following options are supported:
+        - token: (string, required) Specifies the Dropbox access token for accessing a Dropbox account or API.
+
+    - github: (object, optional) Specifies the GitHub settings. The following options are supported:
+        - token: (string, required) Specifies the GitHub access token for accessing a GitHub account or API.
+        - repository: (string, required) Specifies the name of the repository on GitHub where files will be uploaded.
+"""
+
