@@ -52,3 +52,15 @@ Configuration:
         - repository: (string, required) Specifies the name of the repository on GitHub where files will be uploaded.
 """
 
+## How to Run
+
+To run the program, follow these steps:
+
+1. Open the `config.yml` file and add all the necessary request fields as required by the program. (Refer to the program documentation or README file for information on the required fields).
+
+2. Run the `setup.py` script by opening a command prompt or terminal window, navigating to the directory where the program files are located, and typing `python setup.py`.
+
+3. Once the setup is complete, run the `main.py` script by opening a command prompt or terminal window, navigating to the directory where the program files are located, and typing `python main.py`.
+
+4. The program will run and generate the necessary output based on the request fields specified in the `config.yml` file.
+
